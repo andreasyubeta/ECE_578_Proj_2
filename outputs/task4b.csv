@@ -1,0 +1,10 @@
+business_label,structural_role,as_count,matched_business_class_count,percent
+Transit/Access,Customer-serving,9314,41117,22.652431
+Transit/Access,Peering edge,5941,41117,14.449011
+Transit/Access,Stubs or Multi-homed ASes,25862,41117,62.898558
+Content,Customer-serving,895,3977,22.504400
+Content,Peering edge,904,3977,22.730702
+Content,Stubs or Multi-homed ASes,2178,3977,54.764898
+Enterprise,Customer-serving,573,17803,3.218559
+Enterprise,Peering edge,1343,17803,7.543672
+Enterprise,Stubs or Multi-homed ASes,15887,17803,89.237769

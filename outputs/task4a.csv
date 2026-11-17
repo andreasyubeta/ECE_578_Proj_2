@@ -1,0 +1,7 @@
+population,business_label,customer_serving_count,peering_edge_count,stub_or_multihomed_count,as_count
+matched,Transit/Access,9314,5941,25862,41117
+matched,Content,895,904,2178,3977
+matched,Enterprise,573,1343,15887,17803
+matched_total,,10782,8188,43927,62897
+classification_only,,,,,8768
+relationship_only,,,,,14447
