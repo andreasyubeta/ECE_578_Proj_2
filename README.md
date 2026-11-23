@@ -70,4 +70,20 @@ Run `python3 task4.py` to join the April 2021 business classifications with the 
 | `outputs/task4b.csv` | Nine business-label and structural-role combinations with counts, matched business-class denominators, and percentages. A zero denominator produces a blank percentage. |
 | `outputs/task4c.csv` | All matched ASes in ascending ASN order with both snapshot dates, both labels, and the four degree counts. |
 
-AI assisted in checking the input files, drafting this README, and implementing and verifying the Task 1, 2, and 4 data exports.
+Run `python3 task3.py` to compute per-origin-AS prefix and address counts. The script runs the union correctness checks (the example above, adjacent ranges, and a /0) before reading the data, then cross-checks the global address union against `ipaddress.collapse_addresses`. Address-count rank is the AS's position when sorted by unique addresses.
+
+| File | Contents |
+| --- | --- |
+| `outputs/task3a.csv` | Distinct prefixes `P_i`, unique addresses `A_i`, and both ranks for every origin AS. |
+| `outputs/task3b.csv` | Power-of-two bins `[2^k, 2^(k+1))` for `P_i` and `A_i`, with counts and percentages of all origin ASes. |
+| `outputs/task3c_*.csv` | Top 25 ASes by prefix count, top 25 by address count, and the 25 ASes with at least 500 prefixes and the fewest addresses per prefix. |
+
+Run `python3 task5.py` to compute customer cones by breadth-first search over provider-to-customer edges from each AS. A visited set counts each downstream AS once and stops the search from looping on a cycle. Kahn's algorithm counts ASes on or below a p2c cycle; the November 2024 graph has none. `task5a.csv` lists every AS, `task5b.csv` the top 15 by cone size (Table 1), and `task5c.csv` the top 100 by cone size. `task5c_top_by_degree.csv` lists the top 100 by global degree for comparing the two rankings. Ties are broken by ascending ASN.
+
+Run `python3 task6.py` to compare random and degree-targeted removal at f = 0, 1, 2, 5, and 10 percent. Each fraction removes `round(f × 77,344)` ASes. Targeted removal uses the original global degree, with ties broken by ascending ASN. Random removal uses 20 trials seeded 0–19. `task6.csv` reports the mean, standard deviation, minimum, and maximum of R(f) under the assignment's approximation, and the mean exact LCC fraction from union-find for comparison. `task6_trials.csv` has every trial.
+
+Run `python3 task7.py` to run the greedy clique heuristic. The strict version stops at the first ranked AS that is not adjacent to every clique member. The extended version follows the assignment note: it skips such ASes and scans the top 50 ASes by global degree. `task7.csv` lists the extended clique in the order members were added, `task7_scan.csv` records the decision for each of the 50 scanned ASes, and `task7_summary.csv` gives both clique sizes.
+
+Run `python3 make_graphs.py` after the task scripts to render Graphs 1–6 and the Task 6 robustness plot from the CSVs into `outputs/*.png`. Tasks 3, 5, and 7 read organization names through `as_org.py`.
+
+AI assisted in checking the input files, drafting this README, implementing and verifying all task data exports, and producing the graphs.

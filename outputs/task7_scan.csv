@@ -1,0 +1,51 @@
+global_degree_rank,asn,organization,global_degree,decision,clique_position,not_adjacent_to_clique_members
+1,6939,Hurricane Electric LLC,9443,added,1,
+2,24482,HostSG,8723,added,2,
+3,49544,i3D.net B.V,6986,added,3,
+4,174,"Cogent Communications, LLC",6781,skipped,,6939 24482
+5,3356,"Level 3 Parent, LLC",6657,skipped,,24482
+6,199524,G-Core Labs S.A.,6118,added,4,
+7,39120,Convergenze S.p.A.,5777,added,5,
+8,35280,F5 Networks SARL,5185,added,6,
+9,271253,LINK BRASIL TELECOMUNICACOES LTDA,5063,added,7,
+10,37721,Virtual Technologies & Solutions,4705,added,8,
+11,1239,Sprint,4612,skipped,,6939 24482 35280 37721
+12,137409,GSL Networks Pty LTD,4163,added,9,
+13,6057,Administracion Nacional de Telecomunicaciones,3909,added,10,
+14,51185,MainStreaming SpA,3751,added,11,
+15,64289,Macarne.com,3592,added,12,
+16,1828,Unitas Global,3364,added,13,
+17,42473,ANEXIA Internetdienstleistungs GmbH,3179,added,14,
+18,25091,IP-Max SA,3057,added,15,
+19,37468,Angola Cables,3046,added,16,
+20,212483,LEVEL EIGHTY-SIX COMMUNICATIONS LTD,2996,skipped,,6939 37721
+21,23106,AMERICAN TOWER DO BRASIL-COMUNICAÇÂO MULTIMÍDIA LT,2950,added,17,
+22,267613,ELETRONET S.A.,2925,added,18,
+23,7195,EDGEUNO S.A.S,2810,added,19,
+24,6424,EDGOO NETWORKS UNIPESSOAL LDA,2760,added,20,
+25,58511,Anycast Holdings Pty Ltd,2751,added,21,
+26,6461,Zayo Bandwidth,2702,skipped,,51185 1828 267613 7195
+27,41047,Bart Vrancken,2667,added,22,
+28,41327,Fiber Telecom S.p.A.,2665,added,23,
+29,12741,Netia SA,2619,added,24,
+30,61568,ALOO TELECOM - FSF TECNOLOGIA SA,2566,skipped,,41047
+31,5405,Inter.link GmbH,2564,added,25,
+32,34224,Neterra Ltd.,2562,added,26,
+33,39351,31173 Services AB,2524,added,27,
+34,917,"Misaka Network, Inc.",2510,skipped,,25091 41047 41327 34224
+35,1299,Arelion Sweden AB,2471,skipped,,24482 39120 137409 51185 64289 23106 41047 12741 34224
+36,34927,iFog GmbH,2455,added,28,
+37,13237,euNetworks GmbH,2426,added,29,
+38,7018,"AT&T Enterprises, LLC",2328,skipped,,24482 49544 199524 39120 35280 271253 37721 137409 6057 51185 64289 1828 42473 25091 37468 23106 267613 7195 6424 58511 41047 41327 12741 5405 34224 39351 34927 13237
+39,7713,Telekomunikasi Indonesia (PT),2317,skipped,,271253 23106 41327
+40,4455,IX Reach Ltd,2312,added,30,
+41,35598,INETCOM CARRIER LLC,2276,added,31,
+42,33891,Core-Backbone GmbH,2231,skipped,,6057 42473
+43,34549,meerfarbig GmbH & Co. KG,2219,added,32,
+44,3216,"PJSC ""Vimpelcom""",2184,added,33,
+45,9002,RETN Limited,2174,skipped,,271253 37721 6057 51185 267613 6424 41047 12741 5405 34224 39351 13237 35598 34549
+46,37100,SEACOM Limited,2163,added,34,
+47,20764,CJSC RASCOM,2114,added,35,
+48,12779,IT.Gate S.p.A.,2113,added,36,
+49,60171,AFR-IX TELECOM S.A.,2105,added,37,
+50,38880,Micron21 Datacentre Pty Ltd,2086,added,38,
